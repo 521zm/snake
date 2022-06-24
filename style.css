@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* height: 100vh; */
+    background-color: rgba(0, 0, 0, .4);
+}
+table {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+}
+
+#map {
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 500px;
+    height: 500px;
+   background-image: url(贪吃蛇bg.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#map div{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+.pattern{
+    position: absolute;
+    left: 600px;
+    top: 30%;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pattern button{
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    background-color: cornsilk;
+    cursor: pointer;
+    border-radius: 10%;
+    color: aqua;
+}
+.restart{
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    width: 200px;
+    height: 100px;
+    background-color: brown;
+    text-align: center;
+    line-height: 100px;
+    font-size: 25px;
+    color: aqua;
+    border-radius: 10%;
+    cursor:pointer;
+}
+.gameover{
+    position: absolute;
+    top: 300px;
+    right: 200px;
+    width: 200px;
+    height: 100px;
+    background-color: brown;
+    text-align: center;
+    line-height: 100px;
+    font-size: 25px;
+    color: aqua;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.gogame{
+    position: absolute;
+    top: 500px;
+    right: 200px;
+    width: 200px;
+    height: 100px;
+    background-color: brown;
+    text-align: center;
+    line-height: 100px;
+    font-size: 25px;
+    color: aqua;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.time{
+    position: absolute;
+    top: 5px;
+    right: 500px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    color: aqua;
+    font-size: 25px;
+}
