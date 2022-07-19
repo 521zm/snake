@@ -170,17 +170,34 @@ restart.addEventListener('click', function () {
 })
 // 暂停游戏
 const gameover = document.querySelector('.gameover')
-gameover.addEventListener('click',function(){
+gameover.addEventListener('click', function () {
     clearInterval(timer)
 })
 // 继续游戏
 const gogame = document.querySelector('.gogame')
-gogame.addEventListener('click',function(){
+gogame.addEventListener('click', function () {
     timer = setInterval(move, 500);
 })
 // 时间
-const time =document.querySelector('.time')
-time.innerHTML = Date()
-setInterval(function(){
-    time.innerHTML = Date()
-},1000)
+const time = document.querySelector('.time')
+function startTime() {
+    time.style.fontSize = 50 +'px'
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds(); // 在小于10的数字前加一个‘0’
+    m = checkTime(m);
+    s = checkTime(s);
+    time.innerHTML = h + ":" + m + ":" + s;   
+}
+startTime()
+t = setInterval(function () {
+    startTime()
+}, 1000);
+
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
